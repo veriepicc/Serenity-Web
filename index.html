@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Client</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Serenity</h1>
+            </div>
+            <nav>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tutorial" class="nav-link">Tutorial</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#docs" class="nav-link">Docs</a>
+                <a href="https://github.com/veriepicc/Serenity-Bloxd" class="nav-link" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Serenity Client</h1>
+                    <p class="hero-subtitle">A feature-rich, open-source client designed to augment your gameplay experience with a modern, intuitive interface and powerful modules.</p>
+                    <div class="hero-buttons">
+                        <a href="https://raw.githubusercontent.com/veriepicc/Serenity-Bloxd/main/dist/Serenity.js" class="btn btn-primary" target="_blank">Download</a>
+                        <a href="https://discord.gg/3uf9hJbgMe" class="btn btn-secondary" target="_blank">Join Discord</a>
+                    </div>
+                </div>
+            </div>
+             <div class="background-animation"></div>
+        </section>
+
+        <section id="features" class="features-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Client Features</h2>
+                <div class="features-grid">
+                    <!-- Features will be dynamically loaded here or listed manually -->
+                     <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-magic"></i></div>
+                        <h3 class="feature-title">ClickGUI</h3>
+                        <p class="feature-description">The main user interface for the client.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3 class="feature-title">FPSCounter</h3>
+                        <p class="feature-description">Displays your current frames per second.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+                        <h3 class="feature-title">Interface</h3>
+                        <p class="feature-description">Replaces the default in-game header.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                        <h3 class="feature-title">Chat</h3>
+                        <p class="feature-description">A customizable, feature-rich chat overlay.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-keyboard"></i></div>
+                        <h3 class="feature-title">Keystrokes</h3>
+                        <p class="feature-description">Displays your keystrokes with a modern look.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-running"></i></div>
+                        <h3 class="feature-title">ToggleSprint</h3>
+                        <p class="feature-description">Automatically sprints for you.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="feature-title">ArmorHUD</h3>
+                        <p class="feature-description">Displays your currently equipped armor.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-mouse-pointer"></i></div>
+                        <h3 class="feature-title">CPSCounter</h3>
+                        <p class="feature-description">Displays your clicks per second.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 class="feature-title">FPSBooster</h3>
+                        <p class="feature-description">Optimizes game performance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-ban"></i></div>
+                        <h3 class="feature-title">AdBlocker</h3>
+                        <p class="feature-description">Blocks in-game ads and trackers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h3 class="feature-title">Crosshair</h3>
+                        <p class="feature-description">A customizable crosshair overlay.</p>
+                    </div>
+                     <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-list-ul"></i></div>
+                        <h3 class="feature-title">ArrayList</h3>
+                        <p class="feature-description">Displays a list of enabled modules.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorial" class="tutorial-section fade-in">
+            <div class="container">
+                <h2 class="section-title">How to Use</h2>
+                <div class="tutorial-tabs">
+                    <button class="tab-link active" data-tab="console">Console Method</button>
+                    <button class="tab-link" data-tab="userscript">Userscript Method</button>
+                </div>
+
+                <div id="console" class="tutorial-content active">
+                    <div class="tutorial-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Copy the Script</h3>
+                                <p>Click the button below to copy the entire Serenity script to your clipboard.</p>
+                                <button class="btn btn-secondary" id="copy-script-button"><i class="fas fa-copy"></i> Copy Script</button>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Open Developer Tools</h3>
+                                <p>On the bloxd.io website, open the developer tools by pressing <b>F12</b> or <b>Ctrl+Shift+I</b> (Cmd+Option+I on Mac).</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Paste in Console</h3>
+                                <p>Go to the "Console" tab, paste the script you copied, and press <b>Enter</b>. If the browser shows a warning, you might need to type <code class="inline-code">allow pasting</code> and press Enter before it lets you paste.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>You're All Set!</h3>
+                                <p>The client will now be active. Press <b>Right-Shift</b> to open the menu. Note: You'll need to do this every time you refresh the page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="userscript" class="tutorial-content">
+                    <div class="tutorial-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Get a Userscript Manager</h3>
+                                <p>This is a browser extension that will automatically run Serenity for you. Pick the one for your browser:</p>
+                                <div class="browser-links">
+                                    <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" class="btn-browser" target="_blank">Tampermonkey (Chrome)</a>
+                                    <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/" class="btn-browser" target="_blank">Tampermonkey (Firefox)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Install Serenity</h3>
+                                <p>Once the extension is installed, click the "Download" button at the top of this page. A new tab will open in the extension.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Confirm Installation</h3>
+                                <p>In the new Tampermonkey tab, a big "Install" button will show up. Just click it!</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>You're All Set!</h3>
+                                <p>That's it! Go to bloxd.io and the client will load automatically. Press <b>Right-Shift</b> to open the menu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community-section fade-in">
+            <div class="container">
+                <div class="community-content">
+                    <h2 class="section-title">You Can Help Make Serenity Better!</h2>
+                    <p class="hero-subtitle">Serenity is open source, which means anyone (even you!) can help add new features. If you have a cool idea, check out our GitHub to learn how you can contribute.</p>
+                    <a href="https://github.com/veriepicc/Serenity-Bloxd" class="btn btn-secondary" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is this a cheat or a hack?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. Serenity is a client-side utility designed to enhance your visual experience and provide helpful information. It does not provide unfair advantages or interact with the game in a way that would be considered cheating.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I get banned for using this?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While Serenity is designed to be safe, the use of any third-party script is at your own risk. We recommend you always be aware of the game's terms of service. However, Serenity does not contain features that are typically bannable.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I update the script?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>If you installed it using the <b>Userscript Method</b>, your script manager (like Tampermonkey) will automatically check for and apply updates. If you use the <b>Console Method</b>, you will need to copy the new script from this website when a new version is released.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>The menu isn't opening, what do I do?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The default key to open the menu is <b>Right-Shift</b>. Make sure you're pressing the shift key on the right side of your keyboard. Also, ensure the script is running correctly in your userscript manager or that you've pasted it correctly in the console without any errors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="docs-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Developer Docs</h2>
+                <div class="docs-content">
+                    <h3>Want to build a feature? Awesome!</h3>
+                    <p>Making your own module is pretty easy. Here's a quick guide to get you started.</p>
+
+                    <h4>1. Get the Code</h4>
+                    <p>First, you'll need to get the project on your computer. You can do this with Git.</p>
+                    <pre><code>git clone https://github.com/veriepicc/Serenity-Bloxd.git
+cd Serenity-Bloxd
+npm install</code></pre>
+
+                    <h4>2. Start the Builder</h4>
+                    <p>Run this command in your terminal. It will watch for any changes you make and automatically rebuild the script.</p>
+                    <pre><code>npm run watch</code></pre>
+
+                    <h4>3. Create a Module</h4>
+                    <p>Modules are just little bits of code that add features. They all live in the <code>src/modules/</code> folder. Just create a new <code>.js</code> file in a category folder (like <code>visual</code> or <code>combat</code>). Here is a basic example:</p>
+                    <pre><code>const MyAwesomeModule = {
+    name: 'MyAwesomeModule',
+    category: 'Utility',
+    description: 'This is what my new feature does!',
+    enabled: false, 
+
+    onEnable(manager) {
+        console.log('My module is on!');
+    },
+
+    onDisable(manager) {
+        console.log('My module is off!');
+    }
+};
+
+export default MyAwesomeModule;
+</code></pre>
+                    <p>Don't forget to add your new module to the list in <code>src/ModuleManager.js</code> so it shows up in the game!</p>
+
+                    <h4>4. Share Your Creation</h4>
+                    <p>When you're done, you can send us your new feature on our <a href="https://github.com/veriepicc/Serenity-Bloxd/pulls" target="_blank">GitHub page</a> by opening a Pull Request. We'd love to see what you make!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Serenity. All Rights Reserved. This project is licensed under the GPL-3.0 License.</p>
+            <p>Disclaimer: This software is provided "as is". Users are solely responsible for their actions.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
